@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Test</title>
+        <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header { 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:flex-end; 
+        background:#f5ead4; 
+        padding: 20px 60px;
+        }
+        nav { 
+        margin:20px 0;
+        }
+        nav ul { 
+        list-style:none; 
+        display: flex;
+        gap:30px;
+        }
+        nav ul li a:hover{
+            color: #e34308;
+        }
+
+        .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        background:#f5ead4;
+        min-height: 80 vh;
+        overflow: hidden;
+        
+        }
+
+        h1, h2 { margin-bottom:20px; }
+        h1 { font-size:2.8rem; }
+        h2 { font-size:2.2rem; }
+
+        .text-box {
+        display: flex;
+        flex: 1;
+        background-color: #f5ead4;
+        color: #102938;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 30px;
+        }
+
+        .image{
+            flex: 1;
+            overflow: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            display: block;
+            
+        }   
+
+
+        /* Responsive layout - makes the two columns/boxes 
+        stack on top of each other instead of next to each other, 
+        on small screens */
+        @media (max-width: 600px) {
+            nav, article {
+            width: 100%;
+            height: auto;
+        }
+}
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#bios">Bios</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <div class="container">
+        <div id="about" class="text-box">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+        </div>
+        <div class="image">
+            <img src="images/test.jpeg" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <div class="image">
+            <img src="images/test.jpeg" alt="">
+        </div>
+        <div id="bios" class="text-box">
+            <h2>Biography</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div id="contact" class="text-box">
+            <h2>Contact</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+        </div>
+        <div class="image">
+            <img src="images/test.jpeg" alt="">
+        </div>
+    </div>
+    </body>
+</html>
